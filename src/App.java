@@ -1,20 +1,30 @@
+import java.util.*;
 
 public class App {
 
     public static void main(String[] args) {
-    
-        String name = "Bro";
+        
+        ArrayList<ArrayList<String>> groceryList = new ArrayList();
 
-        //boolean result = name.equalsIgnoreCase("bro");
-        //int result = name.length();
-        //char result = name.charAt(0);
-        //int result = name.indexOf("B");
-        //boolean result = name.isEmpty();
-        //String result = name.toUpperCase();
-        //String result = name.toLowerCase();
-        //String result = name.trim();
-        //String result = name.replace('o', 'a');
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("pasta");
+        bakeryList.add("garlic bread");
+        bakeryList.add("donuts");
 
-        System.out.println(result);
+        ArrayList<String> produceList = new ArrayList();
+        produceList.add("tomatoes");
+        produceList.add("zucchini");
+        produceList.add("peppers");
+
+        ArrayList<String> drinksList = new ArrayList();
+        drinksList.add("soda");
+        drinksList.add("coffee");
+
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+
+        System.out.println(groceryList.get(2).get(0));
+
     }
 }
