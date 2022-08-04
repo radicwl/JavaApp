@@ -3,22 +3,18 @@ public class App {
 
     public static void main(String[] args) {
     
-        // 2D array = an array of arrays
+        String name = "Bro";
 
-        String[][] cars = {
-            {"Camaro","Corvette","Silverado"},
-            {"Mustang","Ranger","F-150"},
-            {"Ferrari","Lambo","Tesla"}
-            };
+        //boolean result = name.equalsIgnoreCase("bro");
+        //int result = name.length();
+        //char result = name.charAt(0);
+        //int result = name.indexOf("B");
+        //boolean result = name.isEmpty();
+        //String result = name.toUpperCase();
+        //String result = name.toLowerCase();
+        //String result = name.trim();
+        //String result = name.replace('o', 'a');
 
-
-
-        for(int i = 0; i<cars.length; i++){
-            System.out.println();
-            for(int j = 0; j<cars[i].length; j++){
-                System.out.print(cars[i][j]+" ");
-            }
-        }
-
+        System.out.println(result);
     }
 }
